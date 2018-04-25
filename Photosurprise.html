@@ -4,11 +4,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 
 	<style>
 		#body{
 		height:100%;
-		width:100%;}
+		width:100%;
+		background-color:#ffffff;}
 		
 		input[type=search]{
 			width:100%;
@@ -19,7 +21,7 @@
 			outline:none;
 		}
 		
-		h3{
+		#title{
 		display:inline-block;
 		letter-spacing:.4px;
 		word-spacing:0px;
@@ -58,13 +60,55 @@
 		
 		.merchandise{
 		opacity:0.5;
-		height:500px;
+		height:350px;
 		width:300px;
 		margin-top:50px;
 		margin-left:30px;
 		background-color:#c0c0c0;
 		display:inline-block;}
 		
+		#topproducts{
+		margin-left:25px;
+		margin-top:30px;
+		margin-bottom:-30px;
+		color:#585858;
+		display:block;
+		letter-spacing:-1px;
+		font-size:30px;
+		font-family:Assistant;
+		font-weight:normal;
+		}
+		
+		#posters{
+		width:300px;
+		height:100px;
+		background-color:#ffffff;
+		margin-top:400px;
+		border-style:solid;
+		border-width:0.1px;
+		border-color:#808080;
+		}
+		
+		
+		
+		#posters{
+		border-style:solid;
+		border-color:red;
+		width:300px;
+		height:100px;
+		margin-left:30px;
+		margin-top:-5px;
+		display:inline-block;
+		}
+		
+		#apparel{
+		border-style:solid;
+		border-color:red;
+		width:300px;
+		height:100px;
+		margin-left:60px;
+		margin-top:-5px;
+		display:inline-block;}
 		
 	</style>
 </head>
@@ -74,7 +118,7 @@
 			background-color:#f8f8f8;-->
 <div id="body">
 	<div id="header">
-		<h3>Photo Surprise</h3>
+		<h3 id="title">Photo Surprise</h3>
 		<form>
 			<input type="search" name="search" placeholder="Search..">
 		</form>
@@ -83,10 +127,17 @@
 		
 		<a href="https://www.google.com" id="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a>
 	</div>
+	<span id="topproducts">Top Products</span>
+	<div class="merchandise">	
+	</div>
+	<div class="merchandise">
+	</div>
 	<div class="merchandise"></div>
 	<div class="merchandise"></div>
-	<div class="merchandise"></div>
-	<div class="merchandise"></div>
+	<div id="posters">
+	</div>
+	<div id="apparel">
+	</div>
 	
 </div>
 </body>
